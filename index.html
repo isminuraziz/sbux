@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Starbucks Landing Page</title>
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="circle"></div>
+        <nav>
+            <a href="index.html">
+                <img src="images/logo.png" alt="logo starbucks" class="logo">
+            </a>
+            <div class="toggle" onclick="toggleMenu();"></div>
+            <ul class="navbar">
+                <li><a href="index.html"> Home </a></li>
+                <li><a href="#products"> Products </a></li>
+                <li><a href="#"> What's New </a></li>
+            </ul>
+        </nav>
+        <div class="showcase">
+            <div class="textBox">
+                <h2>
+                    It's not just Coffee<br>
+                    It's <span>Starbucks</span>
+                </h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat esse quidem rem nam quod tempora
+                    ipsam. Autem, minus, repellendus illo tenetur voluptas deleniti vero debitis, iure ad itaque
+                    eaque
+                    laboriosam?
+                </p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="imgBox">
+                <img src="images/img1.png" alt="" class="starbucks">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="images/thumb1.png" alt="img1"
+                    onclick="imgSlider('images/img1.png');changeCircleColor('#017143')">
+            </li>
+            <li><img src="images/thumb2.png" alt="img2"
+                    onclick="imgSlider('images/img2.png');changeCircleColor('#eb7495')">
+            </li>
+            <li><img src="images/thumb3.png" alt="img3"
+                    onclick="imgSlider('images/img3.png');changeCircleColor('#d752b1')">
+            </li>
+        </ul>
+    </header>
+
+    <main>
+        <div id="content" class="content">
+            <article id="products" class="products">
+                <div class="heading">
+                    <span>Our Products</span>
+                    <h1>Shop Coffee</h1>
+                </div>
+                <div class="products-container">
+                    <div class="box">
+                        <div class="box-images">
+                            <img src="images/shop1.png" alt="shop1">
+                        </div>
+                        <div class="stars">
+                            <i class="fa-solid fa-star fa-shake fa-sm"></i>
+                            <i class="fa-solid fa-star fa-shake fa-sm"></i>
+                            <i class="fa-solid fa-star fa-shake fa-sm"></i>
+                            <i class="fa-solid fa-star fa-shake fa-sm"></i>
+                            <i class="fa-solid fa-star-half-stroke fa-shake fa-sm"></i>
+                        </div>
+                        <h2>Starbucks Coffee</h2>
+                        <span>$ 12.8</span>
+                        <a href="#" class="btn">Order Now</a>
+                    </div>
+                    <div class="box">
+                        <div class="box-images">
+                            <img src="images/shop2.png" alt="shop2">
+                        </div>
+                        <div class="stars">
+                            <i class="fa-solid fa-star fa-shake fa-sm"></i>
+                            <i class="fa-solid fa-star fa-shake fa-sm"></i>
+                            <i class="fa-solid fa-star fa-shake fa-sm"></i>
+                            <i class="fa-solid fa-star fa-shake fa-sm"></i>
+                            <i class="fa-solid fa-star-half-stroke fa-shake fa-sm"></i>
+                        </div>
+                        <h2>Starbucks Coffee</h2>
+                        <span>$ 12.4</span>
+                        <a href="#" class="btn">Order Now</a>
+                    </div>
+                    <div class="box">
+                        <div class="box-images">
+                            <img src="images/shop3.png" alt="shop3">
+                        </div>
+                        <div class="stars">
+                            <i class="fa-solid fa-star fa-shake fa-sm"></i>
+                            <i class="fa-solid fa-star fa-shake fa-sm"></i>
+                            <i class="fa-solid fa-star fa-shake fa-sm"></i>
+                            <i class="fa-solid fa-star fa-shake fa-sm"></i>
+                            <i class="fa-solid fa-star-half-stroke fa-shake fa-sm"></i>
+                        </div>
+                        <h2>Starbucks Coffee</h2>
+                        <span>$ 12.6</span>
+                        <a href="#" class="btn">Order Now</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- <aside>
+                <article id="promotion" class="promotion">
+                    <div class="promotion-container">
+                        <h3>Order With Uber Eats</h3>
+                        <img src="images/delivery.png" alt="delivery">
+                        <h4>Today Deserve Deliverry</h4>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis, sunt rem
+                            exercitationem doloribus vero eligendi dolor libero. Dolorum recusandae in impedit rerum
+                            et illo, nam expedita, fuga nesciunt inventore facere?</p>
+                        <a href="#" class="btn">Order Now!</a>
+                    </div>
+                </article>
+            </aside> -->
+
+            <aside>
+                <div class="sci">
+                    <ul>
+                        <li><a href="https://www.facebook.com/StarbucksIndonesia/" target="_blank"><img
+                                    src="images/facebook.png" alt="facebook"></a></li>
+                        <li><a href="https://twitter.com/SbuxIndonesia" target="_blank"><img src="images/twitter.png"
+                                    alt="twitter"></a></li>
+                        <li><a href="https://www.instagram.com/starbucksindonesia/" target="_blank"><img
+                                    src="images/instagram.png" alt="instagram"></a></li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <footer>
+        <p> &copy; Ismi Nur Aziz All Right Reserved. </p>
+    </footer>
+
+    <script type="text/javascript" src="main.js"></script>
+</body>
+
+</html>
